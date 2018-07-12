@@ -124,12 +124,18 @@
 
 
 .ddHover:hover{
-	border-bottom: 1px solid #e9930b;
+	border: 1px solid #e9930b;
+	padding: 6px;
+    border-radius: 40px;
+    background-color: rgba(233,147,11,.2);
 }
 
 .ddHoverAfter{
 	color: #e9930b;
-	border-bottom: 1px solid #e9930b;
+	border: 1px solid #e9930b;
+	padding: 6px;
+    border-radius: 40px;
+    background-color: rgba(233,147,11,.2);
 }
 
 .moreList{
@@ -1433,7 +1439,7 @@ text-decoration: none;
 
 .page3.active .head .sort{
 
-	left: 794px;
+	left: 780px;
 
 	opacity: 1;
 
@@ -1458,6 +1464,7 @@ text-decoration: none;
 .page3 .head .sort dd{
 
 	display: inline;
+	margin-left: 20px;
 
 }
 

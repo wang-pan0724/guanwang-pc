@@ -37,7 +37,10 @@ a.tao{top: 48px;}
 .float_qq a:hover{background-color: rgba(255,255,255,.1);}
 
 .w50_l{float: left;width: 50%;}
-.w50_r{float: left;width: 46%;}
+.w50_r{
+	width: 100%;
+	margin: 0 auto;
+}
 .w50_r img{width: 100%;}
 .w50_l{margin-right: 4%;}
 .w100{margin:30px 0;float: left; }
@@ -78,11 +81,15 @@ header{
 }
 .about_ad{
 	position: absolute;
-	width: 721px;height: 164px;
-	background-image: url("../../../22vd/images/about_top.png"/*tpa=http://dede23.va666.com/22vd/images/about_top.png*/);
-	left: 50%;top: 50%;
-	margin-left: -360px;margin-top: -60px;
 	z-index: 99;
+	top:180px;
+	width: 100%;
+}
+.about_ad p{
+	font-size: 36px;
+	font-weight: 100;
+	text-align: center;
+	color: rgb(222, 224, 226);
 }
 
 .cloud{
@@ -117,13 +124,13 @@ a.houtai{
 	display: inline-block;
 	height: 48px;line-height: 48px;
 	text-align: center;
-	background-color: #98af2b;
-	background-color: rgba(177,207,41,.8);
+	background-color: #e9930b;
+	background-color: rgba(233,147,11,.8);
 	color: #fff;
 	transition: 0.2s;
 	z-index: 9
 }
-a.houtai:hover{padding: 0 50px;background-color: rgba(177,207,41,.9);}
+a.houtai:hover{padding: 0 50px;background-color: rgba(233,147,11,.9);}
 /*a.apply:before{
 	display: inline-block;
 	content: "";
@@ -182,7 +189,7 @@ nav a.on:before{
 	position: absolute;
 	height: 3px;width: 100%;
 	left: 0;bottom: 0;
-	background-color: #98af2b;
+	background-color: #e9930b;
 }
 
 /*header nav:hover li{line-height: 22px;}
@@ -235,8 +242,8 @@ article.templates_list{
 .templates_list .box{
 	float: left;
 	position: relative;
-	width: 30%;
-	margin-right: 5%;
+	width: 22%;
+	margin-right: 4%;
 	margin-bottom: 80px;
 }
 .templates_list .box>div{position: relative; overflow: hidden;}
@@ -248,37 +255,34 @@ article.templates_list{
 	background-image: url("../../../22vd/images/shadow.png"/*tpa=http://dede23.va666.com/22vd/images/shadow.png*/);
 	background-size: 100% 33px;
 }
-.templates_list .box:nth-child(3n){margin-right: 0;}
+.templates_list .box:nth-child(4n){margin-right: 0;}
 
 .templates_list .box img{position: relative;width: 100%;top: 0;}
 .templates_list .box a{
 	position: absolute;
 	top: 0;left: 0;bottom: 0;right: 0;
-	/*background-color: transparent;*/
-	background-image: url("../../../22vd/images/pic_cell.png"/*tpa=http://dede23.va666.com/22vd/images/pic_cell.png*/);
-	background-image: url("../../../22vd/images/bg.svg"/*tpa=http://dede23.va666.com/22vd/images/bg.svg*/);
-	background-size: 100% 100%;
 	transition: 0.2s;
 	z-index: 9;
 }
 
 .templates_list .box span{
 	position: absolute;
-	bottom: -88px;left:2px;
+	bottom: -106px;
 	color: #e4e4e4;
-	width: 99%;padding-top: 14px;padding-bottom: 34px;
-	font-size: 15px;
+	width: 100%;padding-top: 14px;padding-bottom: 16px;
+	font-size: 14px;
 	background: #282a32;
 	text-align: center;
 }
 .templates_list .box span em{
 	font-style: normal;
-	display: inline-block;
-	padding: 3px 6px;
-	color: #fff;
-	background: #98af2b;
-	border-radius: 4px;
-	margin-right: 6px;
+    display: block;
+    padding: 3px 16px;
+    color: #282a32;
+    background: rgba(237,133,11,.8);
+    margin-right: 36px;
+    margin-left: 36px;
+    margin-bottom: 10px;
 }
 
 
@@ -308,7 +312,7 @@ article.templates_list{
 }
 .page_on a{
 	color: #fff !important;
-	background-color: #94b733;
+	background-color: #e9930b;
 }
 .page li:hover{
 	opacity: 0.6;
@@ -346,12 +350,12 @@ span.high{color: #f76d22;}
 	font-size: 18px;
 	margin-top: 20px;
 	color: #fff;
-	background-color: #94b733;
+	background-color: #e9930b;
 	padding:0 66px;margin-right: 10px;
 	height: 56px;line-height: 56px;
 	transition: 0.3s;
 }
-.detail_info ul>a:hover{background-color: #7fb225;}
+.detail_info ul>a:hover{background-color: #e9930b;}
 .pay{margin-top: 20px;}
 .pay a{font-size: 13px;margin-right: 40px;color: #888;}
 .pay a:hover{color: #60add4}
@@ -602,9 +606,9 @@ p.banner_p span{
 	border-radius: 4px;
 	height: 24px;line-height: 24px;
 	color: #fff;
-	background-color: #94b733;
+	background-color: #e9930b;
 }
-.other_site li:hover i{background-color: #7fb225}
+.other_site li:hover i{background-color: #e9930b;}
 .other_site li:hover .img{
 	transform: translate(0,-6px);
 	-ms-transform: translate(0,-6px);
@@ -630,7 +634,7 @@ p.banner_p span{
 .news_item>p{position: relative; font-size: 21px;margin-bottom: 20px;z-index: 9;}
 
 .news_item .thumb_no + p{margin-top: -10px;}
-.news_item>p a:hover{color: #94b733;}
+.news_item>p a:hover{color: #e9930b;}
 .thumb:hover img{transform: scale(1.1);}
 .news_item span{font-size: 15px;color: #666;line-height: 26px;}
 
@@ -693,17 +697,18 @@ p.banner_p span{
 .join_info_box{background-color: #fff;width: 47%;float: left;vertical-align: top;}
 .join_info_box.no1{margin-right: 6%;}
 .join_info_box>p{
-	background: url("../../../22vd/images/join_icon1.png"/*tpa=http://dede23.va666.com/22vd/images/join_icon1.png*/) #bdbdc2 no-repeat right;
+	background: url("../../../22vd/images/join_icon1.png"/*tpa=http://dede23.va666.com/22vd/images/join_icon1.png*/) #333333 no-repeat right;
 	color: #fff;font-size: 22px;font-weight: 700;
 	height: 68px;line-height: 68px;
 	vertical-align: top;
+	font-weight: 300;
 }
 .join_info_box.no2>p{background-image: url("../../../22vd/images/join_icon2.png"/*tpa=http://dede23.va666.com/22vd/images/join_icon2.png*/);}
 .join_info_box span{display: inline-block;padding: 30px 0;line-height: 28px;}
-.join_info_box span em{font-style: normal;color: #ff7e00;font-weight: 700;}
+.join_info_box span em{font-style: normal;color: #e9930b;font-weight: 700;}
 
 .join h1{
-	font-size: 36px;color: #ff9c00;
+	font-size: 36px;
 	margin-bottom: 20px;font-weight: 100;
 }
 .join_3{
@@ -716,20 +721,17 @@ p.banner_p span{
 	float: left;
 	padding: 10px 20px;
 }
-.join_ser_box p:before{
-	content: '';
-	width: 140px;height: 140px;
-	display: block;
-	background-image: url("../../../22vd/images/join_icon.png"/*tpa=http://dede23.va666.com/22vd/images/join_icon.png*/);
-	background-position: 0 0;
-	margin: 0 auto;
-	margin-bottom: 30px;
-}
 .join_ser_box.no2 p:before{background-position: -140px 0;}
 .join_ser_box.no3 p:before{background-position: -280px 0;}
 .join_ser_box.no4 p:before{background-position: -420px 0;}
 
-.join_ser_box p{font-size: 30px;margin-bottom: 20px;}
+.join_ser_box img{
+	width: 72px;
+	margin-bottom: 30px;
+	margin-top: 20px;
+}
+
+.join_ser_box p{font-size: 30px;margin-bottom: 20px;font-weight: 200;}
 .join_ser_box span{font-size: 16px;line-height: 26px;}
 
 .join_5{
@@ -746,25 +748,26 @@ p.banner_p span{
 	width: 480px;
 	margin: 0 20px;
 	text-align: left;
-	border: 2px solid #ffc000;
+	border: 1px solid #e9930b;
 	padding: 30px;
 }
 .join_support_box p{
 	position: absolute;
-	height: 48px;line-height: 48px;padding: 0 20px;
+	height: 42px;line-height: 42px;padding: 0 20px;
 	font-size: 24px;font-weight: 700;color: #383940;
-	background-color: #ffc000;
-	top: -48px;left: -2px;
+	background-color: #e9930b;
+	top: -28px;
+	font-weight: 300;
 }
-.join_support_box span{font-size: 16px;line-height: 30px;display: inline-block;}
+.join_support_box span{font-size: 16px;line-height: 30px;display: inline-block;font-weight: 200;}
 .join_6 span{display: block;font-size: 21px;margin: 10px;text-indent: 4px;}
-.join_6 a{display: inline-block;margin-top: 30px; font-size: 21px;padding: 15px 80px;color: #fff;background-color: #ff6c00;transition: 0.4s;}
-.join_6 a:hover{background-color:  #ff9c00}
+.join_6 a{display: inline-block;margin-top: 30px; font-size: 21px;padding: 15px 80px;color: #fff;background-color: #e9930b;transition: 0.4s;}
+.join_6 a:hover{background-color:  #e9930b;}
 
 /*————————————————————————————————— about ————————————————————————————————*/
 section.about{
 	width: 1100px;
-	margin: 120px auto;
+	margin: 60px auto;
 	margin-bottom: 0;
 }
 section.ser{
@@ -787,7 +790,7 @@ section.about>p:after{
 	content: "";
 	position: absolute;
 	width: 40px;height: 3px;
-	background-color: #94b733;
+	background-color: #e9930b;
 	left: 50%;top: -24px;
 	margin-left: -20px;
 }
@@ -821,7 +824,7 @@ section.map>div h1:after{
 	content: '';
 	width: 60px;height: 4px;
 	left: 50%;top: 62px;margin-left: -30px;
-	background-color: #97af2b;
+	background-color: #e9930b;
 }
 section.map>div p{
 	font-size: 16px;line-height: 26px;
@@ -834,9 +837,11 @@ section.map>p{
 	position: absolute;
 	width: 100%;height: 30px;
 	font-size: 21px;
-	color: #c0e02f;
+	color: #e9930b;
 	text-align: center;
-	bottom: 80px;left: 0;
+	top:260px;
+	left: 0;
+	font-weight: 100;
 }
 
 
@@ -861,9 +866,9 @@ section.map>p{
 	margin-bottom: 30px;
 	vertical-align: top;
 }
-.ser_box img{margin-bottom: 10px;display: inline-block;opacity: 0.5;}
+.ser_box img{margin-bottom: 10px;display: inline-block;width: 80%;}
 .ser_box p{font-size: 15px;color: #888;}
-.ser_box p.title{font-size: 21px;margin-bottom: 20px;color: #333;}
+.ser_box p.title{font-size: 21px;margin-bottom: 20px;color: #333;margin-top: 20px;}
 
 .ser_a{
 	position: absolute;
@@ -897,6 +902,19 @@ a.ser_a:before{
 	background-image: url("../../../22vd/images/icon-qq2.png"/*tpa=http://dede23.va666.com/22vd/images/icon-qq2.png*/);
 }
 
+.service{
+	width: 1000px;
+	margin: 60px auto;
+	margin-bottom: 0;
+}
+.service p{
+	position: relative;
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+	font-size: 18px;
+	line-height: 30px;
+}
 .service_box{
 	float: left;
 	position: relative;
@@ -906,6 +924,7 @@ a.ser_a:before{
 	color: #fff;
 	background-color: #7c7e84;
 	transition: 0.4s;
+	margin-top: 40px;
 }
 .service_bg{
 	position: absolute;
@@ -921,7 +940,7 @@ a.ser_a:before{
 	transition: 0.4s;
 }
 
-.service_box:first-child{background-color: #6f7278;}
+.service_box:first-child{background-color: #aeb1b8;}
 .service_box:first-child .service_bg{background-image: url("../../../22vd/images/service_1.jpg"/*tpa=http://dede23.va666.com/22vd/images/service_1.jpg*/);}
 .service_box:last-child{background-color: #5f6267;}
 .service_box:last-child .service_bg{background-image: url("../../../22vd/images/service_2.jpg"/*tpa=http://dede23.va666.com/22vd/images/service_2.jpg*/);}
@@ -940,7 +959,7 @@ a.ser_a:before{
 	font-size: 12px;
 	text-transform: uppercase;
 	padding-bottom: 8px;
-	color: #ebe6ab;
+	color: #e9930b;
 	z-index: 2;
 }
 .service_box h5:after,.footer>p:after{
@@ -968,7 +987,16 @@ a.ser_a:before{
 
 /*————————————————————————————————— footer ————————————————————————————————*/
 
-
+.service  h3{
+	display: block;
+	text-align: center;
+	font-size: 36px;
+	font-weight: 100;
+	color: #42484e;
+	margin-bottom: 40px;
+	/*font-family: "hero","tt_1",Arial, "MingLiU";*/
+	padding: 0;
+}
 .case_box{
 	position: relative;
 	float: left;
@@ -997,7 +1025,7 @@ a.ser_a:before{
 	z-index: 1;
 }
 .case_box em{
-	font-size: 13px;color: #ccc;font-style: normal;
+	font-size: 13px;color: #666;font-style: normal;
 }
 .case_list .case_box img{transform: scale(1.005);}
 .case_box a.view,.case_box a.more{
@@ -1064,7 +1092,7 @@ footer .qr{
 footer .links.news{width: 22%;}
 footer .links a{display: block;line-height: 30px;transition: 0.2s;}
 footer .contactc li a{transition: 0.2s;}
-footer .links a:hover{color: #94b733;}
+footer .links a:hover{color: #e9930b;}
 
 footer .contactc{width: 15%;}
 footer .contactc li{
@@ -1081,7 +1109,7 @@ footer .contactc li:before{
 }
 footer .contactc li:nth-child(1):before{background-image: url("../../../22vd/images/icon-qq.png"/*tpa=http://dede23.va666.com/22vd/images/icon-qq.png*/);}
 footer .contactc li:nth-child(2):before{background-image: url("../../../22vd/images/icon-ww.png"/*tpa=http://dede23.va666.com/22vd/images/icon-ww.png*/);}
-footer .contactc li a:hover{color:#94b733; }
+footer .contactc li a:hover{color:#e9930b; }
 .copy{padding-top: 20px;color: #999;font-size: 14px;}
 
 
@@ -1110,13 +1138,13 @@ footer .contactc li a:hover{color:#94b733; }
 	.cloud p:before{zoom:0.8;}
 	.templates_list .box p{height: 36px;line-height: 36px;margin-top: -24px;}
 	.templates_list .box span{font-size: 13px;}
-	.ser_box p.title{font-size: 16px;margin-bottom: 10px;}
-	.ser_box{padding: 0 2%;height: 270px;}
+	.ser_box p.title{font-size: 16px;margin-bottom: 10px;margin-top: 10px;}
+	.ser_box{padding: 0 2%;height: 360px;}
 	.ser_box p{font-size: 13px;}
-
+	service cf>h3{font-size: 33px;}
 	.service_box h5{font-size: 26px;}
 	.service_info p{font-size: 15px;line-height: 26px;}
-	.service_box{padding: 60px 0 120px 0;}
+	.service_box{padding: 60px 0 120px 0;margin-top: 40px;}
 	.ser_a{height: 40px;line-height: 39px;}
 	a.ser_a:before{top: -8px;}
 
