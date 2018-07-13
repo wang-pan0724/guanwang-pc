@@ -1083,6 +1083,7 @@ footer{
 footer .links{
 	float: left;
 	width: 20%;
+	margin-top: 40px;
 }
 footer .qr,footer .contactc{float: right;margin-left: 40px;}
 footer .qr{
@@ -1110,7 +1111,7 @@ footer .contactc li:before{
 footer .contactc li:nth-child(1):before{background-image: url("../../../22vd/images/icon-qq.png"/*tpa=http://dede23.va666.com/22vd/images/icon-qq.png*/);}
 footer .contactc li:nth-child(2):before{background-image: url("../../../22vd/images/icon-ww.png"/*tpa=http://dede23.va666.com/22vd/images/icon-ww.png*/);}
 footer .contactc li a:hover{color:#e9930b; }
-.copy{padding-top: 20px;color: #999;font-size: 14px;}
+.copy{padding-top: 20px;color: #999;font-size: 14px;text-align: center;}
 
 
 .m_nav{display: none;}
